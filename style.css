@@ -1,0 +1,655 @@
+
+*{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+body {
+    /* --- Your Original Layout Code (Untouched) --- */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+
+    /* --- 2026 Modern Aesthetic --- */
+    background-color: #f0f4f8;
+    background-image: 
+        radial-gradient(circle at 14% 50%, rgba(159, 201, 255, 0.4), transparent 50%),
+        radial-gradient(circle at top left, rgba(102, 122, 218, 0.6), transparent 50%),
+        radial-gradient(circle at 50% 80%, rgba(101, 255, 183, 0.674), transparent 50%);
+    background-size: 200% 200%;
+    animation: ambientShift 12s ease-in-out infinite alternate;
+}
+
+
+}
+
+
+
+
+
+
+
+/*
+body{
+    background-color: #bfbfbf;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    min-height: 100vh;
+    margin: 0;
+
+    background:
+       radial-gradient(circle at top left, #9fc9ff, transparent 40%),
+       radial-gradient(circle at bottom right, #c4ceff, transparent 90%);
+       
+}
+*/
+
+
+
+
+/* This block of code styles the writing throught the whole
+project*/
+h1,h2,p{
+    /*font-family: Arial, sans-serif;*/
+
+    /*font-family: "Inter", sans-serif;*/
+    /*font-family: "Manrope", sans-serif;*/
+    /*font-family: "Plus Jakarta Sans", sans-serif;*/
+    /*font-family: "Space Grotesk", sans-serif;*/
+    /*font-family: "Sora", sans-serif;*/
+    /*font-family: "Outfit", sans-serif;*/
+    /*font-family: "Urbanist", sans-serif;*/
+    /*font-family: "DM Sans", sans-serif;*/
+    font-family: "Onest", sans-serif;*/
+    /*font-family: "General Sans", sans-serif;*/
+}
+
+
+h1{
+    font-size: 25px;
+}
+
+p{
+    font-size: 20px;
+}
+
+/*This contains the whole welcoming message and password input UI */
+.contentcontainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+/*This styles the instructions container */
+
+/*Old design */
+/*
+.instructions{
+    background-color: white;
+    border: 2px solid grey;
+}
+*/
+/*New design*/
+.instructions{
+
+    /* Size */
+    width: min(100%, 700px);
+    margin: 1px auto;
+    padding: 1px;
+
+    /* Glassmorphism */
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    /* Border */
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 1px;
+
+    /* Depth */
+    box-shadow:
+        0 18px 40px rgba(15,23,42,0.18),
+        inset 0 1px 0 rgba(255,255,255,0.6);
+
+    box-sizing: border-box;
+
+    /*Aligning items inside*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+/*This aligns the text inside the instructions container */
+.instructions h1,p{
+    text-align: left;
+}
+
+
+/*This contains the whole password input system and instructions 
+shown when you create and input the password*/
+/*Old design*/
+/*
+#passwordcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid grey;
+    width: 100%;
+    padding-bottom: 20px;
+}
+*/
+/*New design*/
+#passwordcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+    /* Size */
+    width: min(100%, 700px);
+    margin: 1px auto;
+    padding: 20px;
+
+    /* Glassmorphism */
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    /* Border */
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 1px;
+
+    /* Depth */
+    box-shadow:
+        0 18px 40px rgba(15,23,42,0.18),
+        inset 0 1px 0 rgba(255,255,255,0.6);
+
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+/*These styles the inputs for text*/
+input{
+    width: 85%;
+    max-width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid #0080ff;
+    border-radius: 3px;
+    max-width: 100%;
+}
+
+.instructions, .passwordcontainer{
+    padding: 20px 20px;
+}
+
+
+
+/*This styles all buttons  */
+/*Old button design */
+/*
+button {
+    font-size: 20px;
+    width: 85%;
+    margin: 20px 5px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    background-color: #0080ff;
+    color: white;
+}
+*/
+
+
+button {
+
+    /*Change the button size */
+    width: 85%;
+    max-width: 100%;
+    height: 64px;
+
+    /* adjust maximum size*/
+    min-width: 64px;
+    min-height: 64px;
+
+    box-sizing: border-box;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*Change colors */
+    background-color: #3333ff;
+
+    /*Change the symbol or text color*/
+    color: black;
+
+    /*Change the shape*/
+    border: 3px solid rgba(148, 163, 184, 0.45);
+    border-radius: 3px;
+    
+
+    margin: 20px;
+
+    /*Edit the shadow underneath*/
+    box-shadow:
+        0 10px 22px rgba(15, 23, 42, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+
+    /* Edit what you write inside of it*/
+    font-size: 32px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+
+    
+}
+
+
+/* Mouse hovering above the button */
+
+button:hover {
+    background-color: #80ff80;
+    border-color: #ccffcc;
+    
+    /*makes it move a bit up when you hover*/
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 16px 30px rgba(79, 70, 229, 0.32),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+
+/* Button while being clicked */
+
+button:active {
+    transform: translateY(0) scale(0.94);
+
+    box-shadow:
+        0 4px 10px rgba(39, 57, 100, 0.18),
+        inset 0 1px 3px rgba(15, 23, 42, 0.1);
+}
+
+
+/* Button selected through keyboard navigation */
+
+button:focus-visible {
+    outline: 3px solid rgba(99, 102, 241, 0.35);
+    outline-offset: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* The red warning that appears when you haven't inputed a password*/
+#password_warning{
+    margin: 1px 1px;
+    font-size: 20px;
+    color: red;
+}
+
+#attempts_warning{
+   margin: 1px 1px;
+   font-size: 20px;
+   color: red; 
+}
+
+/*The log in success that appears once you log in */
+#login_success{
+    background: #00cc00;
+    border: 2px solid blue;
+    border-radius: 5px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+
+
+    box-sizing: border-box;
+    padding: 0;
+
+    border: 3px solid rgba(148, 163, 184, 0.45);
+    border-radius: 3px;
+
+    margin: 20px;
+
+    box-shadow:
+        0 10px 22px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+    
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+#login_success:hover {
+    background-color: #80ff80;
+    border-color: #ccffcc;
+    
+    /*makes it move a bit up when you hover*/
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 16px 30px rgba(79, 70, 229, 0.32),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+
+
+
+/*The big log in successful box*/
+#login_success p{
+    font-size: 32px;
+    margin: 20px 20px;
+    font-weight: 600;
+}
+
+
+
+.hidden{
+    display: none !important;
+}
+
+
+
+/* From here onward we will manage the styles for the intruder alarm 
+elements */
+
+
+/*This styles the entire alarm container  */
+.alert_container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*This styles the intruder sign */
+.intruder_sign{
+    /*background-color: green;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 33.33%
+}
+
+
+.intruder_container{
+    /*background-color: yellow;*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    transition: 0.2s;
+}
+
+.intruder_container h1{
+    background-color: red;
+    font-size: 90px;
+    text-align: center;
+    margin-top: 0%;
+}
+
+/*This contains the image with the danger emojis */
+.image_container{
+    /*background-color: orange;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 33.33%;
+}
+
+
+
+.alert_sign{
+    /*background-color: green;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 33.33%
+}
+
+
+.alert_container{
+    /*background-color: yellow;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.alertword_container h1{
+    background-color: red;
+    font-size: 90px;
+    text-align: center;
+    margin-top: 0%;
+}
+
+
+/* Now this styles the fonts for INTRUDER and ALERT*/
+
+
+.intruder_container h1,
+.alertword_container h1{
+    /*font-family: "Orbitron", sans-serif;*/
+    /*font-family: "Audiowide", cursive;*/
+    /*font-family: "Oxanium", sans-serif;*/
+    /*font-family: "Rajdhani", sans-serif;*/
+    /*font-family: "Exo 2", sans-serif;*/
+    /*font-family: "Michroma", sans-serif;*/
+    /*font-family: "Chakra Petch", sans-serif;*/
+    /*font-family: "Quantico", sans-serif;*/
+    font-family: "Press Start 2P", cursive;*/
+    /*font-family: "Silkscreen", cursive;*/
+    /*font-family: "VT323", monospace;*/
+}
+
+
+/* This resizes the image */
+
+.warning_icon{
+    height: 900px;
+    width: auto;
+}
+
+
+/* And the following is a button that resets everything back to normal
+once the alarm has been triggered*/
+
+
+.unblock_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*From now on, this will me the media queries for phone optimization */
+
+
+
+@media (max-width: 600px){
+    body{
+
+        /* Move the content towards the top instead of perfectly centering it.
+       This prevents everything from feeling cramped on a phone. */
+        justify-content: flex-start;
+
+        /*Gives a bit of space between the element and the top of the page */
+        padding: 50px 0;
+    }
+
+    .contentcontainer{
+
+        /*The entire container uses the total screen width */
+        width: 100%;
+        /* Gives space between the edges and the container*/
+        padding: 20px;
+    }
+
+    .instructions,
+    #passwordcontainer{
+        width: 100%;
+
+        /*Reduce the inside spacing slightly for smaller screens*/
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 21px;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+    input{
+        width: 100%;
+        /*A little higher so it's easier to type*/
+        height: 48px;
+
+        /*Keep the text away from the left and right borders*/
+        padding: 0 12px;
+
+        font-size: 30px;
+
+    }
+
+    button{
+        width: 100%;
+        min-height: 54px;
+
+        /*Reduce the vertical spacing between buttons*/
+        margin: 30 30px;
+    }
+
+    #login_success{
+        width: 100%;
+        margin: 20px 20px;
+    }
+
+    #login_success p{
+        font-size: 30px;
+        margin: 10 16px;
+    }
+
+    /*Now let's edit all alert signs*/
+    .intruder_container h1,
+    .alertword_container h1{
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .intruder_sign,
+    .intruder_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*And let's resize the warning icon*/
+
+    .warning_icon{
+        width: auto;
+        height: 650px; 
+    }
+
+    /*Active effects when you click on mobile*/
+    button:active{
+    background-color: #80ff80;
+    border-color: #ccffcc;
+    
+    /*makes it move a bit up when you hover*/
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 16px 30px rgba(79, 70, 229, 0.32),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    }
+
+    .unblock_button{
+        width: 80%;
+    }
+
+    
+
+}
